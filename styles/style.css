@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+@font-face{
+    font-family:Reef;
+    src:url(../fonts/Reef.otf);         /*we don't have to use the web safe font if we use the rule.*/
+}
+
+body{
+    font-family: "Reef",sans-serif;
+    color: #1e272e;
+    text-rendering: optimizeLegibility;       /* used for rendering text */
+}
+
+/* Header Section  */
+
+li{
+    list-style: none;
+    display:inline-block;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width:100%;
+    color:#fff;
+    background-color:#1e272e;
+    box-shadow: 0 4px 8px #777;
+}
+
+.heading-div{
+    max-width:1400px;
+    display: flex;
+    margin:0 auto;
+    justify-content: space-between;
+    padding:20px;
+    align-items:center;
+}
+
+.heading-div h1{
+    color:#ffa801;
+    font-size:40px;
+    letter-spacing:1px;
+}
+
+.nav-menu a{
+    color:#fff;
+    padding:5px 30px;
+    border-right:1px solid #ffa801;
+    font-size:20px;
+    transition:color .3s ease-in-out;
+}
+
+.nav-menu a:last-child {
+    border:none;
+}
+
+.nav-menu a:hover{
+    color:#ffa801;
+}
+
+.header-image{
+    max-width:1400px;
+    margin:30px auto;
+}
+
+.header-image img{
+    width:100%;
+}
+
+/*Artists Section*/
+.artists-text{
+    display:flex;
+    max-width:1400px;
+    justify-content:space-between;
+    margin:50px auto;
+    border-bottom: 2px solid #777;
+    padding-bottom: 30px;
+}
+
+.artists{
+    margin-right:30px;
+}
+
+.artists:last-child{
+    margin:0;
+}
+
+.artist-name{
+    display:flex;
+    align-items:center;
+    margin-bottom: 15px;
+}
+
+.shape{
+    width:16px;
+    height:32px;
+    position:relative;
+    background-color:#ffa801;
+    margin-right:30px;
+}
+
+.shape::before{
+    content:"";
+    position:absolute;
+    right:-16px;
+    border:0;
+    width:0;
+    height:0;
+    border-left:16px solid #ffa801;
+    border-top:16px solid transparent;
+    border-bottom:16px solid transparent;
+}
+
+.artist-name h3{
+    text-transform:uppercase;
+    font-size:22px;
+}
+
+.artists a{
+    color:#ffa801;
+    font-size:18px;
+    transition:all 0.3s ease-in-out;
+}
+
+.artists a:hover{
+    color:#1e272e;
+}
+
+.artists p{
+    margin-bottom:10px;
+}

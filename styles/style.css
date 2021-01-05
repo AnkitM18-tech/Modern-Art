@@ -34,7 +34,7 @@ header{
 }
 
 .heading-div{
-    max-width:1400px;
+    max-width:1300px;
     display: flex;
     margin:0 auto;
     justify-content: space-between;
@@ -65,7 +65,7 @@ header{
 }
 
 .header-image{
-    max-width:1400px;
+    max-width:1300px;
     margin:30px auto;
 }
 
@@ -76,7 +76,7 @@ header{
 /*Artists Section*/
 .artists-text{
     display:flex;
-    max-width:1400px;
+    max-width:1300px;
     justify-content:space-between;
     margin:50px auto;
     border-bottom: 2px solid #777;
@@ -136,3 +136,75 @@ header{
     margin-bottom:10px;
 }
 
+.artist-work{
+    max-width:1300px;
+    margin:0 auto;
+    text-align:right;
+    margin-bottom:50px;
+}
+
+.work-pictures{
+    display:flex;
+    justify-content:space-between;
+    margin:15px auto;
+    width:100%;
+    
+}
+
+.work-pictures img{
+    filter:grayscale(100%);
+    cursor:pointer;
+    transition:all 0.3s ease-in-out;
+    border:4px solid transparent;
+}
+
+.work-pictures img:hover{
+    transform: scale(1.1);
+    filter:grayscale(0);
+    border:4px solid #ffa801;
+}
+
+.artist-work a{
+    color:#ffa801;
+    font-size:18px;
+    transition:all 0.3s ease;
+}
+
+.artist-work a:hover{
+    color:#1e272e;
+}
+
+/*footer section*/
+
+footer{
+    background-color:#1e272e;
+    color:#fff;
+}
+
+footer div{
+    max-width: 1300px;
+    margin:auto;
+}
+
+footer div p{
+    font-size: 18px;
+    padding:20px 0;
+}
+
+.top-button{
+    position:fixed;
+    right:2%;
+    bottom:12%;
+    display:block;
+    background-color:#ffa801;
+    color:#fff;
+    padding:15px;
+    border-radius:5px;
+    text-shadow:1px 1px 1px #777;
+    transition:all 0.2s linear;
+}
+
+.top-button:hover{
+    background-color:#1e272e;
+    border-radius:50%;
+}
